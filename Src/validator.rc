@@ -1,0 +1,28 @@
+/****************************************************************************
+
+
+validator.rc
+
+produced by Borland Resource Workshop
+
+
+*****************************************************************************/
+
+#define IDD_DIALOG1	1
+#define IDC_LISTBOX1	101
+#define IDC_COMBOBOX1	102
+#define IDC_COMBOBOX2	103
+#define IDC_STATICTEXT1	104
+#define IDC_DriveLbl	104
+
+IDD_DIALOG1 DIALOG 0, 0, 368, 586
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION ""
+FONT 8, "MS Sans Serif"
+{
+ CONTROL "ListBox1", IDC_LISTBOX1, "listbox", LBS_STANDARD | WS_CHILD | WS_VISIBLE | WS_TABSTOP, -2, 24, 370, 568
+ CONTROL "ComboBox1", IDC_COMBOBOX1, "combobox", CBS_DROPDOWNLIST | CBS_SORT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 40, 4, 76, 13
+ CONTROL "ComboBox2", IDC_COMBOBOX2, "combobox", CBS_DROPDOWNLIST | CBS_SORT | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 156, 4, 88, 13
+ CONTROL "Drive", IDC_DriveLbl, "static", SS_RIGHT | WS_CHILD | WS_VISIBLE, -1, 7, 32, 9
+}
+
